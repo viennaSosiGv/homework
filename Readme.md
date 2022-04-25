@@ -15,8 +15,6 @@
 
     .
     ├── application        # 응용계층 (interfaces와 domain을 연결 시켜주는 중간 구조)
-        .
-
     ├── common             # 공통 영역 (handler, interceptor, Expcetion) 
     ├── config             # config
     ├── domain             # entity, interface, model
