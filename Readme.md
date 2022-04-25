@@ -9,10 +9,6 @@
 
 프로젝트 구조 도메인 Layer 사용 (엔터프라이  어플리케이션 레이어)
 ============================
-- 단방향 유지 : interface > application > domain < infrastructure
-
-
-
     .
     ├── application        # 응용계층 (interfaces와 domain을 연결 시켜주는 중간 구조)
     ├── common             # 공통 영역 (handler, interceptor, Expcetion) 
