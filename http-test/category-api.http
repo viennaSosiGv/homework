@@ -1,0 +1,60 @@
+# 카테고리 전체 조회
+http://local.wemakeprice.com:8080/category
+accept: */*
+
+###
+
+# 상위 카테고리 등록
+POST http://local.wemakeprice.com:8080/category/
+accept: */*
+Content-Type: application/json
+
+{
+  "categoryName": "향수",
+  "categoryNo": 11,
+  "depth": 1
+}
+
+###
+
+# 카테고리 조회
+GET http://local.wemakeprice.com:8080/category/11
+accept: */*
+
+###
+
+# 서브 카테고리 등록
+POST http://local.wemakeprice.com:8080/category/
+accept: */*
+Content-Type: application/json
+
+{
+  "categoryName": "샤워코롬",
+  "categoryNo": 12,
+  "depth": 2,
+  "parentNo": 11
+}
+
+###
+
+
+###
+
+# 카테고리 수정
+PUT http://local.wemakeprice.com:8080/category/12
+accept: */*
+Content-Type: application/json
+
+{
+  "categoryName": "남녀공용",
+  "depth": 2,
+  "parentNo": 11
+}
+
+###
+
+
+
+
+
+

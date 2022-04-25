@@ -1,0 +1,61 @@
+# 상품 전체 조회
+GET http://local.wemakeprice.com:8080/product
+accept: */*
+
+###
+
+# 상품 등록
+POST http://local.wemakeprice.com:8080/product/
+accept: */*
+Content-Type: application/json
+
+{
+  "brandName": "일리윤",
+  "categoryNo": 1,
+  "productName": "판테놀 리페어 립밤 10g",
+  "productNo": 1001,
+  "productPrice": 100
+}
+
+###
+
+# 상품 단일 조회
+GET http://local.wemakeprice.com:8080/product/1001
+accept: */*
+
+###
+
+# 상품 수정
+PUT http://local.wemakeprice.com:8080/product/1001
+accept: */*
+Content-Type: application/json
+
+{
+  "brandName": "일리윤",
+  "categoryNo": 10,
+  "productName": "판테놀 리페어 립밤 12g",
+  "productPrice": 1200
+}
+
+###
+
+
+###
+
+# 상품 삭제
+DELETE http://local.wemakeprice.com:8080/product/1001
+accept: */*
+
+###
+
+
+
+# 카테고리 별 상품 조회
+GET http://local.wemakeprice.com:8080/product/category/1
+accept: */*
+
+###
+
+# 상품 전체 조회
+GET http://local.wemakeprice.com:8080/product
+accept: */*
