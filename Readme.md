@@ -16,6 +16,8 @@
     ├── domain             # entity, interface, model
     ├── infrastructure     # service (구현체)
     └── interfaces         # Controller
+    
+    - 단방향 유지 : interface > application > domain < infrastructure
 
 API 설명
 ============
